@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS flow</h1>
+
+    <!-- <h1>CSS Selector(선택자)</h1>
+    <p>element, .class, #id, children, ...</p> -->
+
+
+    <!-- <style>
+        /* class */
+       .container {
+            background-color: whitesmoke;
+       }
+        /* id */
+        #title {
+            font-weight: normal
+        }
+        /* element */
+        p {
+            font-style: italic
+        }
+        /* children */
+        p .bold {
+            font-weight: bold;
+        }
+        .border {
+            border: 3px solid black;
+        }
+        .bg-black {
+            background-color:  black;
+            color: white;
+        }
+    </style>
+
+    <div class="container">
+        <h2 id="title">현대자동차</h2>
+        <p>현대자동차 2022년 <span class="bold"> 신제품></span></p>
+        <u1 class="border bg-black"> 
+            <li>제너시스</li>
+            <li>스타리아</li>
+            <li>캐스퍼</li>
+        </u1>
+</div> -->
+    <!-- <h1>CSS color</h1>
+    <p>Name, RGB, RGBA, HEX</p>
+
+    <style>
+        /* Name */
+        .red {
+            color: red;
+        }
+        /* rgb(red, green, blue) */
+        /* 0 ~ 255 */
+        .green {
+            color: rgb(60,179,113);
+        }
+        /* rgba(red, green, blue, opacity) */
+        /* opacity: 0(완전투명) - 1(완전불투명) */
+        .opacity {
+            color: rgba(60, 179, 113, 0.5);
+        }
+        /* hexadecimal(16진수) */
+        /* 0 ~ 9 a-f */
+        /* rrggbb */
+        .blue {
+            color: #00f;
+        }
+    </style>
+
+    <ul>
+        <li class="red">Red</li>
+        <li class="green">Green</li>
+        <li class="opacity">Green</li>
+        <li class="blue">Blue</li>
+    </ul>
+ -->
+
+    <!-- <h1>Background</h1>
+    <p>background-color, Background-image</p>
+
+    <style>
+        .bg-black{
+            background-color: #000;
+            color: #fff
+        }
+    </style> -->
+
+        <!-- <style>
+            .bg-image {
+                border: 1px dashed;
+                width: 200px;
+                height: 200px;
+                /* 상대경로 */
+                /* 현재 파일을 기준으로 */
+                background-image: url('../../cloud.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
+
+
+    <div class="bg-image"></div> -->
+
+    <!-- <h1>border padding margin</h1>
+         
+    <style>
+        .btn {
+            /* element 내부의 공간 */
+            /* top right bottom left */
+            padding: 10px 15px;
+            /* 여백 */
+            margin: 5px;
+        }
+    </style>
+
+    <h1>저장하시겠습니다까?</h1>
+    <div class="btn-group">
+        <button class="btn">저장</button>
+        <button class="btn">취소</button>
+
+    </div> -->
+
+    <!-- <h1>Display</h1>
+    <p>inline, block, inline-block</p> -->
+
+    <!-- <style>
+        hr {
+            margin: 0
+        }
+        p, span, button {
+            border: 1px dashed;
+            padding: 10px;
+            margin: 10px
+        }
+    </style> -->
+
+    <!-- display: block parent element(DOM tree상 바로 위의 element) 의 넓이를 다 차지한다 -->
+    <!-- div, p ,header, nav, section, form, footer -->
+    <!-- <p>block</p>
+    <p>block</p>
+
+    <hr> -->
+    <!-- display: inline 필요한 만큼만 넓이를 차지한다 -->
+    <!-- 상하의 padding과 margin이 무시된다 -->
+    <!-- a, span, img -->
+    <!-- <span>inline</span>
+    <span>inline</span>
+
+    <hr> -->
+
+    <!-- display: inline-block 필요한 만큼만 넓이를 차지한다 -->
+    <!-- button, input -->
+    <!-- <button>inline-block</button>
+    <button>inline-block</button> -->
+        <!-- <h1>width height min-width, min-height,  max-width, max-height</h1>
+    <style>
+        p{
+            border: 1px dashed;
+            /* 콘텐츠에 필요한 만큼의 넓이, 기본값 */
+            width: auto;
+            /* 콘텐츠에 필요한 만큼의 넓이, 기본값 */
+            height: auto;
+        }
+        .fixed {
+            width: 200px;
+            height: 200px;
+        }
+        max-width {
+            max-width: 600px;
+        }
+        .min-height {
+            min-height: 100px;
+        }
+
+    </style>
+    <p class="fixed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, laborum odio? Aut, explicabo! Autem hic, saepe omnis ullam animi et, adipisci sit at eum aperiam eius laudantium ipsum obcaecati illo!</p>
+    <p class="max-width">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, laudantium architecto. Perspiciatis facere voluptatem, atque beatae consequatur explicabo commodi dolores cum ab! Modi totam et praesentium cumque explicabo. Harum, tenetur.</p>
+    <p class="min-height">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos commodi dolorum et eius vitae velit ex magni. Ducimus vero, eligendi eius, iusto consectetur nobis reprehenderit corporis quisquam maiores, id recusandae?</p>
+     -->
+
+     <h1>overflow</h1>
+     <!-- <p>콘텐츠가 element의 크기를 넘었을 때</p> -->
+     <!-- <p>vlsible, auto, scroll, hidden</p> -->
+
+     <style>
+         p {
+         border: 1px dashed;
+         width: 200px;
+         height: 100px;
+         display: inline-block;
+         vertical-align: top;
+         }
+     </style>
+     <p class="auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis veniam suscipit eius dolore sunt? Quas, molestiae eligendi. Alias architecto blanditiis qui error, non eos optio quos quam, rem commodi maxime.</p>
+     <p class="scroll">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis veniam suscipit eius dolore sunt? Quas, molestiae eligendi. Alias architecto blanditiis qui error, non eos optio quos quam, rem commodi maxime.</p>
+     <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis veniam suscipit eius dolore sunt? Quas, molestiae eligendi. Alias architecto blanditiis qui error, non eos optio quos quam, rem commodi maxime.</p>
+     <p class="visible">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis veniam suscipit eius dolore sunt? Quas, molestiae eligendi. Alias architecto blanditiis qui error, non eos optio quos quam, rem commodi maxime.</p>
+</body>
+</html>
